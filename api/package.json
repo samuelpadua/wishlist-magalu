@@ -10,6 +10,10 @@
     "start": "node dist/index.js",
     "test": "jest",
     "test:watch": "jest --watchAll",
+    "pretest:watch": "NODE_ENV=test sequelize-cli db:migrate",
+    "posttest:watch": "NODE_ENV=test sequelize-cli db:migrate:undo",
+    "pretest": "NODE_ENV=test sequelize-cli db:migrate",
+    "posttest": "NODE_ENV=test sequelize-cli db:migrate:undo",
     "debug": "nodemon src/index.js --inspect --exec babel-node",
     "dev": "nodemon src/index.js --exec babel-node"
   },
@@ -26,6 +30,7 @@
   "dependencies": {
     "@hapi/hapi": "^20.0.0",
     "http-status": "^1.4.2",
+    "joi": "^17.2.1",
     "klaw-sync": "^6.0.0",
     "sequelize": "^6.3.5",
     "sqlite3": "^5.0.0"

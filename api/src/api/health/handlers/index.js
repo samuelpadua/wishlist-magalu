@@ -1,5 +1,5 @@
-import check from './check'
-import database from './database'
+import check from './check.handler'
+import database from './database.handler'
 
 export default {
   check,
