@@ -1,0 +1,46 @@
+{
+  "name": "wishlist-magalu-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --ignore *.spec.js --out-dir dist --copy-files --source-maps",
+    "lint": "eslint src/*",
+    "lint:fix": "eslint src/* --fix",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "debug": "nodemon src/index.js --inspect --exec babel-node",
+    "dev": "nodemon src/index.js --exec babel-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelpadua/wishlist-magalu.git"
+  },
+  "author": "Samuel Padua",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samuelpadua/wishlist-magalu/issues"
+  },
+  "homepage": "https://github.com/samuelpadua/wishlist-magalu#readme",
+  "dependencies": {
+    "@hapi/hapi": "^20.0.0",
+    "http-status": "^1.4.2",
+    "klaw-sync": "^6.0.0",
+    "sequelize": "^6.3.5",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "eslint": "^7.8.1",
+    "jest": "^26.4.2",
+    "nock": "^13.0.4",
+    "nodemon": "^2.0.4",
+    "semistandard": "^14.2.3",
+    "sequelize-cli": "^6.2.0"
+  }
+}

@@ -1,0 +1,9 @@
+# node_modules
+api/node_modules
+ui/node_modules
+
+# coverage
+api/coverage
+
+# build files
+api/dist
