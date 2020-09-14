@@ -31,5 +31,15 @@ export default [
       tags: ['api', 'customer'],
       validate: validator.findCustomer
     }
+  },
+  {
+    method: 'POST',
+    path: '/api/customer/{id}/wishlist',
+    handler: handlers.addFavoriteProduct,
+    config: {
+      description: 'Add product a customer wishlist',
+      tags: ['api', 'customer', 'wishlist'],
+      validate: validator.createFavoriteProduct
+    }
   }
 ]

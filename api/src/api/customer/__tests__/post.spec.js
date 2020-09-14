@@ -3,13 +3,13 @@ import HTTPStatus from 'http-status'
 import Customer from '../../../modules/customer/models/customer.model'
 
 describe('customer', () => {
-  describe('POST /api/customer', () => {
-    beforeEach(() => {
-      Customer.truncate({
-        cascade: true
-      })
+  beforeEach(() => {
+    Customer.truncate({
+      cascade: true
     })
+  })
 
+  describe('POST /api/customer', () => {
     it('should return status code 201 when create a new user', async () => {
       const { payload, statusCode } = await server.inject({
         method: 'POST',
@@ -60,6 +60,89 @@ describe('customer', () => {
 
       expect(JSON.parse(responseDuplicatedEmail.payload).message).toBe('This email is already in use')
       expect(responseDuplicatedEmail.statusCode).toBe(HTTPStatus.BAD_REQUEST)
+    })
+  })
+
+  describe('POST /api/customer/{id}/wishlist', () => {
+    it('should return status code 201 when adding a product to the wish list', async () => {
+      const responseCustomer = await server.inject({
+        method: 'POST',
+        url: '/api/customer',
+        payload: {
+          name: 'Nome do cliente',
+          email: 'example-6@example.com'
+        }
+      })
+
+      const customer = JSON.parse(responseCustomer.payload)
+
+      const { payload, statusCode } = await server.inject({
+        method: 'POST',
+        url: `/api/customer/${customer.id}/wishlist`,
+        payload: {
+          price: 1699.0,
+          image: 'http://challenge-api.luizalabs.com/images/1bf0f365-fbdd-4e21-9786-da459d78dd1f.jpg',
+          brand: 'bébé confort',
+          product_id: '1bf0f365-fbdd-4e21-9786-da459d78dd1f',
+          title: 'Cadeira para Auto Iseos Bébé Confotrt Earth Brown'
+        }
+      })
+
+      const body = JSON.parse(payload)
+
+      console.log('body => ', body)
+
+      expect(body.price).toBe(1699)
+      expect(body.image).toBe('http://challenge-api.luizalabs.com/images/1bf0f365-fbdd-4e21-9786-da459d78dd1f.jpg')
+      expect(body.brand).toBe('bébé confort')
+      expect(body.product_id).toBe('1bf0f365-fbdd-4e21-9786-da459d78dd1f')
+      expect(body.title).toBe('Cadeira para Auto Iseos Bébé Confotrt Earth Brown')
+      expect(statusCode).toBe(HTTPStatus.CREATED)
+      expect(body).toHaveProperty('id')
+      expect(body).toHaveProperty('createdAt')
+      expect(body).toHaveProperty('updatedAt')
+    })
+
+    it('should return status code 409 when adding a product and it is already marked as a favorite', async () => {
+      const responseCustomer = await server.inject({
+        method: 'POST',
+        url: '/api/customer',
+        payload: {
+          name: 'Nome do cliente',
+          email: 'example-7@example.com'
+        }
+      })
+
+      const customer = JSON.parse(responseCustomer.payload)
+
+      await server.inject({
+        method: 'POST',
+        url: `/api/customer/${customer.id}/wishlist`,
+        payload: {
+          price: 1699.0,
+          image: 'http://challenge-api.luizalabs.com/images/1bf0f365-fbdd-4e21-9786-da459d78dd1f.jpg',
+          brand: 'bébé confort',
+          product_id: '1bf0f365-fbdd-4e21-9786-da459d78dd1f',
+          title: 'Cadeira para Auto Iseos Bébé Confotrt Earth Brown'
+        }
+      })
+
+      const { payload, statusCode } = await server.inject({
+        method: 'POST',
+        url: `/api/customer/${customer.id}/wishlist`,
+        payload: {
+          price: 1699.0,
+          image: 'http://challenge-api.luizalabs.com/images/1bf0f365-fbdd-4e21-9786-da459d78dd1f.jpg',
+          brand: 'bébé confort',
+          product_id: '1bf0f365-fbdd-4e21-9786-da459d78dd1f',
+          title: 'Cadeira para Auto Iseos Bébé Confotrt Earth Brown'
+        }
+      })
+
+      const body = JSON.parse(payload)
+
+      expect(body.message).toBe('This product already marked as a favorite')
+      expect(statusCode).toBe(HTTPStatus.CONFLICT)
     })
   })
 })
