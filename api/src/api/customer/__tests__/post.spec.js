@@ -90,8 +90,6 @@ describe('customer', () => {
 
       const body = JSON.parse(payload)
 
-      console.log('body => ', body)
-
       expect(body.price).toBe(1699)
       expect(body.image).toBe('http://challenge-api.luizalabs.com/images/1bf0f365-fbdd-4e21-9786-da459d78dd1f.jpg')
       expect(body.brand).toBe('bébé confort')

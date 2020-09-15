@@ -14,7 +14,7 @@ Wishlist.init({
   customer_id: DataTypes.INTEGER,
   title: DataTypes.STRING,
   brand: DataTypes.STRING,
-  price: DataTypes.NUMBER,
+  price: DataTypes.DECIMAL,
   image: DataTypes.STRING,
   product_id: DataTypes.STRING
 }, {

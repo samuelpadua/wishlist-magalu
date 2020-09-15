@@ -9,8 +9,9 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       customer_id: {
-        type: Sequelize.INTEGER,
+        allowNull: false,
         unsigned: true,
+        type: Sequelize.INTEGER,
         references: {
           model: 'customers',
           key: 'id'

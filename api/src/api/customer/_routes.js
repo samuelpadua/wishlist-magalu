@@ -41,5 +41,15 @@ export default [
       tags: ['api', 'customer', 'wishlist'],
       validate: validator.createFavoriteProduct
     }
+  },
+  {
+    method: 'GET',
+    path: '/api/customer/{id}/wishlist',
+    handler: handlers.listCustomerFavoriteProducts,
+    config: {
+      description: 'List favorite products of a customer',
+      tags: ['api', 'customer', 'wishlist'],
+      validate: validator.findCustomer
+    }
   }
 ]

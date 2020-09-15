@@ -23,3 +23,11 @@ export async function createFavoriteProduct (customerId, payload) {
 
   return wishlist
 }
+
+export async function list (customerId) {
+  return await Wishlist.findAll({
+    where: {
+      customer_id: customerId
+    }
+  })
+}
