@@ -51,5 +51,15 @@ export default [
       tags: ['api', 'customer', 'wishlist'],
       validate: validator.findCustomer
     }
+  },
+  {
+    method: 'DELETE',
+    path: '/api/customer/{id}/wishlist/{wishlist_id}',
+    handler: handlers.deleteFavoriteProduct,
+    config: {
+      description: 'List favorite products of a customer',
+      tags: ['api', 'customer', 'wishlist'],
+      validate: validator.deleteFavoriteProduct
+    }
   }
 ]

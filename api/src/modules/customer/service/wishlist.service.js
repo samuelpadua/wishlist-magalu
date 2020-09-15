@@ -31,3 +31,12 @@ export async function list (customerId) {
     }
   })
 }
+
+export async function destroy (customerId, wishlistId) {
+  return await Wishlist.destroy({
+    where: {
+      id: wishlistId,
+      customer_id: customerId
+    }
+  })
+}
