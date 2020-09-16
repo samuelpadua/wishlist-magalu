@@ -5,6 +5,7 @@ import Routes from '../utils/routes'
 import AuthJWT from 'hapi-auth-jwt2'
 
 import { validate } from '../api/auth/services/auth.service'
+import numeralSetLocale from '../utils/numeral'
 
 async function init () {
   const server = Hapi.server({
@@ -21,6 +22,8 @@ async function init () {
   server.route(Routes)
 
   server.auth.default('jwt')
+
+  numeralSetLocale()
 
   return server
 }

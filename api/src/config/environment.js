@@ -1,4 +1,9 @@
 export default {
+  apis: {
+    challenge: {
+      baseUrl: 'http://challenge-api.luizalabs.com'
+    }
+  },
   databases: {
     sqlite: {
       development: {

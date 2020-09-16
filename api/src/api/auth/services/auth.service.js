@@ -35,7 +35,7 @@ export async function validate (decoded, request, h) {
 
   if (customer) {
     return {
-      isValid: !!customer
+      isValid: true
     }
   }
 
