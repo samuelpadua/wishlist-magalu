@@ -1,7 +1,7 @@
 import HTTPStatus from 'http-status'
 
-import Customer from '../../../modules/customer/models/customer.model'
-import Wishlist from '../../../modules/customer/models/wishlist.model'
+import Customer from '../models/customer.model'
+import Wishlist from '../models/wishlist.model'
 
 describe('customer', () => {
   describe('GET /api/customer', () => {

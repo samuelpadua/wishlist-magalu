@@ -1,6 +1,6 @@
 import httpStatus from 'http-status'
 
-import * as WishlistService from '../../../modules/customer/service/wishlist.service'
+import * as WishlistService from '../services/wishlist.service'
 
 export default async function (request, h) {
   try {

@@ -1,6 +1,6 @@
 import httpStatus from 'http-status'
 
-import * as customerService from '../../../modules/customer/service/customer.service'
+import * as customerService from '../services/customer.service'
 
 export default async function (request, h) {
   const result = await customerService.destroy(request.params.id)

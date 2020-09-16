@@ -1,6 +1,6 @@
 import HTTPStatus from 'http-status'
 
-import Customer from '../../../modules/customer/models/customer.model'
+import Customer from '../models/customer.model'
 
 describe('customer', () => {
   beforeEach(() => {
