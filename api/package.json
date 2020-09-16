@@ -29,8 +29,10 @@
   "homepage": "https://github.com/samuelpadua/wishlist-magalu#readme",
   "dependencies": {
     "@hapi/hapi": "^20.0.0",
+    "hapi-auth-jwt2": "^10.2.0",
     "http-status": "^1.4.2",
     "joi": "^17.2.1",
+    "jsonwebtoken": "^8.5.1",
     "klaw-sync": "^6.0.0",
     "sequelize": "^6.3.5",
     "sqlite3": "^5.0.0"

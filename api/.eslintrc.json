@@ -15,6 +15,7 @@
         "it": "readonly",
         "server": "readonly",
         "expect": "readonly",
-        "beforeEach": "readonly"
+        "beforeEach": "readonly",
+        "beforeAll": "readonly"
     }
 }

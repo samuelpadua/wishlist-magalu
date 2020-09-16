@@ -2,37 +2,36 @@ import HTTPStatus from 'http-status'
 
 import Customer from '../models/customer.model'
 import Wishlist from '../models/wishlist.model'
+import { generateToken } from '../../auth/services/auth.service'
 
 describe('customer', () => {
-  describe('GET /api/customer', () => {
-    beforeEach(() => {
-      Customer.truncate({
-        cascade: true
-      })
+  beforeEach(async () => {
+    await Customer.truncate({
+      cascade: true
     })
-
+  })
+  describe('GET /api/customer', () => {
     it('should return status code 200 when find a customer', async () => {
-      const responseCreatedCustomer = await server.inject({
-        method: 'POST',
-        url: '/api/customer',
-        payload: {
-          name: 'Nome do cliente',
-          email: 'example-3@example.com'
-        }
+      const customerCreated = await Customer.create({
+        name: 'Nome do cliente',
+        email: 'example-3@example.com'
       })
 
-      const customerCreated = JSON.parse(responseCreatedCustomer.payload)
+      const Authorization = await generateToken(customerCreated.email)
 
       const { payload, statusCode } = await server.inject({
         method: 'GET',
-        url: `/api/customer/${customerCreated.id}`
+        url: `/api/customer/${customerCreated.id}`,
+        headers: {
+          Authorization
+        }
       })
 
       const customer = JSON.parse(payload)
 
+      expect(statusCode).toBe(HTTPStatus.OK)
       expect(customer.name).toBe('Nome do cliente')
       expect(customer.email).toBe('example-3@example.com')
-      expect(statusCode).toBe(HTTPStatus.OK)
       expect(customer).toHaveProperty('id')
       expect(customer).toHaveProperty('createdAt')
       expect(customer).toHaveProperty('updatedAt')
@@ -64,9 +63,14 @@ describe('customer', () => {
         title: 'Moisés Dorel Windoo 1529'
       })
 
+      const Authorization = await generateToken(customer.email)
+
       const { payload, statusCode } = await server.inject({
         method: 'GET',
-        url: `/api/customer/${customer.id}/wishlist`
+        url: `/api/customer/${customer.id}/wishlist`,
+        headers: {
+          Authorization
+        }
       })
 
       const body = JSON.parse(payload)

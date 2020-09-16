@@ -6,6 +6,7 @@ export default [
     path: '/api/health/check',
     handler: Handlers.check,
     config: {
+      auth: false,
       description: 'App is running',
       tags: ['api', 'health-check']
     }
@@ -15,6 +16,7 @@ export default [
     path: '/api/health/database',
     handler: Handlers.database,
     config: {
+      auth: false,
       description: 'Database connect test',
       tags: ['api', 'health-check', 'database']
     }

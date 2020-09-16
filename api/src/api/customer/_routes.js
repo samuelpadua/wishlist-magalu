@@ -7,6 +7,7 @@ export default [
     path: '/api/customer',
     handler: handlers.createCustomer,
     config: {
+      auth: false,
       description: 'Create a customer',
       tags: ['api', 'customer'],
       validate: validator.createCustomer
