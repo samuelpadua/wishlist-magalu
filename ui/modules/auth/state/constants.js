@@ -1,0 +1,3 @@
+export const AUTH_REQUEST = 'auth/REQUEST'
+export const AUTH_REQUEST_SUCCESS = 'auth/REQUEST_SUCCESS'
+export const AUTH_REQUEST_FAILURE = 'auth/REQUEST_FAILURE'

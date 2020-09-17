@@ -7,3 +7,6 @@ api/coverage
 
 # build files
 api/dist
+
+# databases sqlite
+api/databases
