@@ -25,9 +25,15 @@ jobs:
         with:
           node-version: '12'
 
-      # Run pipeline of tests
+      # Run pipeline of tests api
       - name: Run tests
         run: |
           npm install --prefix api
           npm run lint --prefix api
           npm test --prefix api
+
+        # Run pipeline of tests ui
+      - name: Run tests
+        run: |
+          npm install --prefix ui
+          npm test --prefix ui
