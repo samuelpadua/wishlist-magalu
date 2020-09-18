@@ -1,0 +1,974 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductList component should render no logged customer 1`] = `
+.c5 {
+  font-size: 2em;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c6 {
+  position: relative;
+}
+
+.c6 div {
+  float: left;
+  color: #d8d8d8;
+}
+
+.c7 {
+  position: absolute;
+  top: 0;
+}
+
+.c7 div {
+  float: left;
+  overflow: hidden;
+  color: #FFCC03;
+}
+
+.c1 .heart {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  -webkit-transition: .333s;
+  transition: .333s;
+}
+
+.c1 .heart svg:hover {
+  font-size: 2.2em;
+}
+
+.c1 .heart svg {
+  -webkit-transition: .333s;
+  transition: .333s;
+  font-size: 2em;
+  color: #cbcbcb;
+}
+
+.c1 .checked svg {
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgb(220,68,167,.1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-animation: fptEpJ 2s 1;
+  animation: fptEpJ 2s 1;
+  color: #DD3294 !important;
+}
+
+.c0 {
+  background: white;
+  padding: 12px;
+  box-shadow: 1px 10px 20px rgba(0,0,0,0.1);
+  border: 1px solid #e8e8e8;
+  margin: 30px 1%;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  -webkit-transition: .233s;
+  transition: .233s;
+  width: calc(20% - 8px);
+}
+
+.c0 .effect0 {
+  -webkit-animation: .333s ease-in-out 0s 1 backwards;
+  animation: .333s ease-in-out 0s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect1 {
+  -webkit-animation: .333s ease-in-out 0.07692307692307693s 1 backwards;
+  animation: .333s ease-in-out 0.07692307692307693s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect2 {
+  -webkit-animation: .333s ease-in-out 0.15384615384615385s 1 backwards;
+  animation: .333s ease-in-out 0.15384615384615385s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect3 {
+  -webkit-animation: .333s ease-in-out 0.23076923076923078s 1 backwards;
+  animation: .333s ease-in-out 0.23076923076923078s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect4 {
+  -webkit-animation: .333s ease-in-out 0.3076923076923077s 1 backwards;
+  animation: .333s ease-in-out 0.3076923076923077s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect5 {
+  -webkit-animation: .333s ease-in-out 0.38461538461538464s 1 backwards;
+  animation: .333s ease-in-out 0.38461538461538464s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect6 {
+  -webkit-animation: .333s ease-in-out 0.46153846153846156s 1 backwards;
+  animation: .333s ease-in-out 0.46153846153846156s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect7 {
+  -webkit-animation: .333s ease-in-out 0.5384615384615384s 1 backwards;
+  animation: .333s ease-in-out 0.5384615384615384s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect8 {
+  -webkit-animation: .333s ease-in-out 0.6153846153846154s 1 backwards;
+  animation: .333s ease-in-out 0.6153846153846154s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect9 {
+  -webkit-animation: .333s ease-in-out 0.6923076923076923s 1 backwards;
+  animation: .333s ease-in-out 0.6923076923076923s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect10 {
+  -webkit-animation: .333s ease-in-out 0.7692307692307693s 1 backwards;
+  animation: .333s ease-in-out 0.7692307692307693s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect11 {
+  -webkit-animation: .333s ease-in-out 0.8461538461538461s 1 backwards;
+  animation: .333s ease-in-out 0.8461538461538461s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect12 {
+  -webkit-animation: .333s ease-in-out 0.9230769230769231s 1 backwards;
+  animation: .333s ease-in-out 0.9230769230769231s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect13 {
+  -webkit-animation: .333s ease-in-out 1s 1 backwards;
+  animation: .333s ease-in-out 1s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect14 {
+  -webkit-animation: .333s ease-in-out 1.0769230769230769s 1 backwards;
+  animation: .333s ease-in-out 1.0769230769230769s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect15 {
+  -webkit-animation: .333s ease-in-out 1.1538461538461537s 1 backwards;
+  animation: .333s ease-in-out 1.1538461538461537s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect16 {
+  -webkit-animation: .333s ease-in-out 1.2307692307692308s 1 backwards;
+  animation: .333s ease-in-out 1.2307692307692308s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect17 {
+  -webkit-animation: .333s ease-in-out 1.3076923076923077s 1 backwards;
+  animation: .333s ease-in-out 1.3076923076923077s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect18 {
+  -webkit-animation: .333s ease-in-out 1.3846153846153846s 1 backwards;
+  animation: .333s ease-in-out 1.3846153846153846s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect19 {
+  -webkit-animation: .333s ease-in-out 1.4615384615384615s 1 backwards;
+  animation: .333s ease-in-out 1.4615384615384615s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect20 {
+  -webkit-animation: .333s ease-in-out 1.5384615384615385s 1 backwards;
+  animation: .333s ease-in-out 1.5384615384615385s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect21 {
+  -webkit-animation: .333s ease-in-out 1.6153846153846154s 1 backwards;
+  animation: .333s ease-in-out 1.6153846153846154s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect22 {
+  -webkit-animation: .333s ease-in-out 1.6923076923076923s 1 backwards;
+  animation: .333s ease-in-out 1.6923076923076923s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect23 {
+  -webkit-animation: .333s ease-in-out 1.7692307692307692s 1 backwards;
+  animation: .333s ease-in-out 1.7692307692307692s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect24 {
+  -webkit-animation: .333s ease-in-out 1.8461538461538463s 1 backwards;
+  animation: .333s ease-in-out 1.8461538461538463s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect25 {
+  -webkit-animation: .333s ease-in-out 1.9230769230769231s 1 backwards;
+  animation: .333s ease-in-out 1.9230769230769231s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect26 {
+  -webkit-animation: .333s ease-in-out 2s 1 backwards;
+  animation: .333s ease-in-out 2s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect27 {
+  -webkit-animation: .333s ease-in-out 2.076923076923077s 1 backwards;
+  animation: .333s ease-in-out 2.076923076923077s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect28 {
+  -webkit-animation: .333s ease-in-out 2.1538461538461537s 1 backwards;
+  animation: .333s ease-in-out 2.1538461538461537s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect29 {
+  -webkit-animation: .333s ease-in-out 2.230769230769231s 1 backwards;
+  animation: .333s ease-in-out 2.230769230769231s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect30 {
+  -webkit-animation: .333s ease-in-out 2.3076923076923075s 1 backwards;
+  animation: .333s ease-in-out 2.3076923076923075s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect31 {
+  -webkit-animation: .333s ease-in-out 2.3846153846153846s 1 backwards;
+  animation: .333s ease-in-out 2.3846153846153846s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect32 {
+  -webkit-animation: .333s ease-in-out 2.4615384615384617s 1 backwards;
+  animation: .333s ease-in-out 2.4615384615384617s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect33 {
+  -webkit-animation: .333s ease-in-out 2.5384615384615383s 1 backwards;
+  animation: .333s ease-in-out 2.5384615384615383s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect34 {
+  -webkit-animation: .333s ease-in-out 2.6153846153846154s 1 backwards;
+  animation: .333s ease-in-out 2.6153846153846154s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect35 {
+  -webkit-animation: .333s ease-in-out 2.6923076923076925s 1 backwards;
+  animation: .333s ease-in-out 2.6923076923076925s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect36 {
+  -webkit-animation: .333s ease-in-out 2.769230769230769s 1 backwards;
+  animation: .333s ease-in-out 2.769230769230769s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect37 {
+  -webkit-animation: .333s ease-in-out 2.8461538461538463s 1 backwards;
+  animation: .333s ease-in-out 2.8461538461538463s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect38 {
+  -webkit-animation: .333s ease-in-out 2.923076923076923s 1 backwards;
+  animation: .333s ease-in-out 2.923076923076923s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect39 {
+  -webkit-animation: .333s ease-in-out 3s 1 backwards;
+  animation: .333s ease-in-out 3s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect40 {
+  -webkit-animation: .333s ease-in-out 3.076923076923077s 1 backwards;
+  animation: .333s ease-in-out 3.076923076923077s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect41 {
+  -webkit-animation: .333s ease-in-out 3.1538461538461537s 1 backwards;
+  animation: .333s ease-in-out 3.1538461538461537s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect42 {
+  -webkit-animation: .333s ease-in-out 3.230769230769231s 1 backwards;
+  animation: .333s ease-in-out 3.230769230769231s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect43 {
+  -webkit-animation: .333s ease-in-out 3.3076923076923075s 1 backwards;
+  animation: .333s ease-in-out 3.3076923076923075s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect44 {
+  -webkit-animation: .333s ease-in-out 3.3846153846153846s 1 backwards;
+  animation: .333s ease-in-out 3.3846153846153846s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect45 {
+  -webkit-animation: .333s ease-in-out 3.4615384615384617s 1 backwards;
+  animation: .333s ease-in-out 3.4615384615384617s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect46 {
+  -webkit-animation: .333s ease-in-out 3.5384615384615383s 1 backwards;
+  animation: .333s ease-in-out 3.5384615384615383s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect47 {
+  -webkit-animation: .333s ease-in-out 3.6153846153846154s 1 backwards;
+  animation: .333s ease-in-out 3.6153846153846154s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect48 {
+  -webkit-animation: .333s ease-in-out 3.6923076923076925s 1 backwards;
+  animation: .333s ease-in-out 3.6923076923076925s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect49 {
+  -webkit-animation: .333s ease-in-out 3.769230769230769s 1 backwards;
+  animation: .333s ease-in-out 3.769230769230769s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect50 {
+  -webkit-animation: .333s ease-in-out 3.8461538461538463s 1 backwards;
+  animation: .333s ease-in-out 3.8461538461538463s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect51 {
+  -webkit-animation: .333s ease-in-out 3.923076923076923s 1 backwards;
+  animation: .333s ease-in-out 3.923076923076923s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect52 {
+  -webkit-animation: .333s ease-in-out 4s 1 backwards;
+  animation: .333s ease-in-out 4s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect53 {
+  -webkit-animation: .333s ease-in-out 4.076923076923077s 1 backwards;
+  animation: .333s ease-in-out 4.076923076923077s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect54 {
+  -webkit-animation: .333s ease-in-out 4.153846153846154s 1 backwards;
+  animation: .333s ease-in-out 4.153846153846154s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect55 {
+  -webkit-animation: .333s ease-in-out 4.230769230769231s 1 backwards;
+  animation: .333s ease-in-out 4.230769230769231s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect56 {
+  -webkit-animation: .333s ease-in-out 4.3076923076923075s 1 backwards;
+  animation: .333s ease-in-out 4.3076923076923075s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect57 {
+  -webkit-animation: .333s ease-in-out 4.384615384615385s 1 backwards;
+  animation: .333s ease-in-out 4.384615384615385s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect58 {
+  -webkit-animation: .333s ease-in-out 4.461538461538462s 1 backwards;
+  animation: .333s ease-in-out 4.461538461538462s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect59 {
+  -webkit-animation: .333s ease-in-out 4.538461538461538s 1 backwards;
+  animation: .333s ease-in-out 4.538461538461538s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect60 {
+  -webkit-animation: .333s ease-in-out 4.615384615384615s 1 backwards;
+  animation: .333s ease-in-out 4.615384615384615s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect61 {
+  -webkit-animation: .333s ease-in-out 4.6923076923076925s 1 backwards;
+  animation: .333s ease-in-out 4.6923076923076925s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect62 {
+  -webkit-animation: .333s ease-in-out 4.769230769230769s 1 backwards;
+  animation: .333s ease-in-out 4.769230769230769s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect63 {
+  -webkit-animation: .333s ease-in-out 4.846153846153846s 1 backwards;
+  animation: .333s ease-in-out 4.846153846153846s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect64 {
+  -webkit-animation: .333s ease-in-out 4.923076923076923s 1 backwards;
+  animation: .333s ease-in-out 4.923076923076923s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect65 {
+  -webkit-animation: .333s ease-in-out 5s 1 backwards;
+  animation: .333s ease-in-out 5s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect66 {
+  -webkit-animation: .333s ease-in-out 5.076923076923077s 1 backwards;
+  animation: .333s ease-in-out 5.076923076923077s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect67 {
+  -webkit-animation: .333s ease-in-out 5.153846153846154s 1 backwards;
+  animation: .333s ease-in-out 5.153846153846154s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect68 {
+  -webkit-animation: .333s ease-in-out 5.230769230769231s 1 backwards;
+  animation: .333s ease-in-out 5.230769230769231s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect69 {
+  -webkit-animation: .333s ease-in-out 5.3076923076923075s 1 backwards;
+  animation: .333s ease-in-out 5.3076923076923075s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect70 {
+  -webkit-animation: .333s ease-in-out 5.384615384615385s 1 backwards;
+  animation: .333s ease-in-out 5.384615384615385s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect71 {
+  -webkit-animation: .333s ease-in-out 5.461538461538462s 1 backwards;
+  animation: .333s ease-in-out 5.461538461538462s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect72 {
+  -webkit-animation: .333s ease-in-out 5.538461538461538s 1 backwards;
+  animation: .333s ease-in-out 5.538461538461538s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect73 {
+  -webkit-animation: .333s ease-in-out 5.615384615384615s 1 backwards;
+  animation: .333s ease-in-out 5.615384615384615s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect74 {
+  -webkit-animation: .333s ease-in-out 5.6923076923076925s 1 backwards;
+  animation: .333s ease-in-out 5.6923076923076925s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect75 {
+  -webkit-animation: .333s ease-in-out 5.769230769230769s 1 backwards;
+  animation: .333s ease-in-out 5.769230769230769s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect76 {
+  -webkit-animation: .333s ease-in-out 5.846153846153846s 1 backwards;
+  animation: .333s ease-in-out 5.846153846153846s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect77 {
+  -webkit-animation: .333s ease-in-out 5.923076923076923s 1 backwards;
+  animation: .333s ease-in-out 5.923076923076923s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect78 {
+  -webkit-animation: .333s ease-in-out 6s 1 backwards;
+  animation: .333s ease-in-out 6s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect79 {
+  -webkit-animation: .333s ease-in-out 6.076923076923077s 1 backwards;
+  animation: .333s ease-in-out 6.076923076923077s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect80 {
+  -webkit-animation: .333s ease-in-out 6.153846153846154s 1 backwards;
+  animation: .333s ease-in-out 6.153846153846154s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect81 {
+  -webkit-animation: .333s ease-in-out 6.230769230769231s 1 backwards;
+  animation: .333s ease-in-out 6.230769230769231s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect82 {
+  -webkit-animation: .333s ease-in-out 6.3076923076923075s 1 backwards;
+  animation: .333s ease-in-out 6.3076923076923075s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect83 {
+  -webkit-animation: .333s ease-in-out 6.384615384615385s 1 backwards;
+  animation: .333s ease-in-out 6.384615384615385s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect84 {
+  -webkit-animation: .333s ease-in-out 6.461538461538462s 1 backwards;
+  animation: .333s ease-in-out 6.461538461538462s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect85 {
+  -webkit-animation: .333s ease-in-out 6.538461538461538s 1 backwards;
+  animation: .333s ease-in-out 6.538461538461538s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect86 {
+  -webkit-animation: .333s ease-in-out 6.615384615384615s 1 backwards;
+  animation: .333s ease-in-out 6.615384615384615s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect87 {
+  -webkit-animation: .333s ease-in-out 6.6923076923076925s 1 backwards;
+  animation: .333s ease-in-out 6.6923076923076925s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect88 {
+  -webkit-animation: .333s ease-in-out 6.769230769230769s 1 backwards;
+  animation: .333s ease-in-out 6.769230769230769s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect89 {
+  -webkit-animation: .333s ease-in-out 6.846153846153846s 1 backwards;
+  animation: .333s ease-in-out 6.846153846153846s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect90 {
+  -webkit-animation: .333s ease-in-out 6.923076923076923s 1 backwards;
+  animation: .333s ease-in-out 6.923076923076923s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect91 {
+  -webkit-animation: .333s ease-in-out 7s 1 backwards;
+  animation: .333s ease-in-out 7s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect92 {
+  -webkit-animation: .333s ease-in-out 7.076923076923077s 1 backwards;
+  animation: .333s ease-in-out 7.076923076923077s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect93 {
+  -webkit-animation: .333s ease-in-out 7.153846153846154s 1 backwards;
+  animation: .333s ease-in-out 7.153846153846154s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect94 {
+  -webkit-animation: .333s ease-in-out 7.230769230769231s 1 backwards;
+  animation: .333s ease-in-out 7.230769230769231s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect95 {
+  -webkit-animation: .333s ease-in-out 7.3076923076923075s 1 backwards;
+  animation: .333s ease-in-out 7.3076923076923075s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect96 {
+  -webkit-animation: .333s ease-in-out 7.384615384615385s 1 backwards;
+  animation: .333s ease-in-out 7.384615384615385s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect97 {
+  -webkit-animation: .333s ease-in-out 7.461538461538462s 1 backwards;
+  animation: .333s ease-in-out 7.461538461538462s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect98 {
+  -webkit-animation: .333s ease-in-out 7.538461538461538s 1 backwards;
+  animation: .333s ease-in-out 7.538461538461538s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .effect99 {
+  -webkit-animation: .333s ease-in-out 7.615384615384615s 1 backwards;
+  animation: .333s ease-in-out 7.615384615384615s 1 backwards;
+  opacity: 1;
+}
+
+.c0 .product {
+  -webkit-animation-name: eyUQSO !important;
+  animation-name: eyUQSO !important;
+}
+
+.c0:hover {
+  box-shadow: 1px 10px 20px rgba(0,0,0,0.6);
+}
+
+.c2 {
+  text-align: center;
+}
+
+.c2 img {
+  max-width: 130px;
+  width: 100%;
+}
+
+.c3 {
+  font-size: 1em;
+  line-height: normal;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  color: #404040;
+  font-weight: 400;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c4 {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+@media (max-width:900px) {
+  .c0 {
+    width: calc(25% - 8px);
+  }
+}
+
+@media (max-width:700px) {
+  .c0 {
+    width: calc(33.333% - 8px);
+  }
+}
+
+@media (max-width:400px) {
+  .c0 {
+    width: calc(50% - 8px);
+  }
+}
+
+@media (max-width:700px) {
+  .c2 img {
+    max-width: 90px;
+  }
+}
+
+@media (max-width:400px) {
+  .c2 img {
+    max-width: 75px;
+  }
+}
+
+<div
+  className="css-hdrfx9"
+>
+  <div
+    className="c0 effect0 product css-1gwnwai"
+  >
+    <div
+      className="c1"
+      onClick={[Function]}
+    >
+      <div
+        className="heart false"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 512 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M256 448l-30.164-27.211C118.718 322.442 48 258.61 48 179.095 48 114.221 97.918 64 162.4 64c36.399 0 70.717 16.742 93.6 43.947C278.882 80.742 313.199 64 349.6 64 414.082 64 464 114.221 464 179.095c0 79.516-70.719 143.348-177.836 241.694L256 448z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="c2 css-orj53y"
+    >
+      <img
+        src="https://a-static.mlcdn.com.br/618x463/smartphone-quantum-muv-pro-azul-tela-de-5-5-32gb-16mp/onofre-agora/745804/1ba149b5f3aee4f4bf0715772888924c.jpg"
+      />
+    </div>
+    <p
+      className="c3"
+    >
+      Cadeira para Auto Iseos Bébé Confort Earth Brown
+       - 
+      bébé confort
+    </p>
+    <p
+      className="c4"
+    >
+      R$ 1.699,00
+    </p>
+  </div>
+  <div
+    className="c0 effect1 product css-1gwnwai"
+  >
+    <div
+      className="c1"
+      onClick={[Function]}
+    >
+      <div
+        className="heart false"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 512 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M256 448l-30.164-27.211C118.718 322.442 48 258.61 48 179.095 48 114.221 97.918 64 162.4 64c36.399 0 70.717 16.742 93.6 43.947C278.882 80.742 313.199 64 349.6 64 414.082 64 464 114.221 464 179.095c0 79.516-70.719 143.348-177.836 241.694L256 448z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="c2 css-orj53y"
+    >
+      <img
+        src="https://a-static.mlcdn.com.br/618x463/smartphone-quantum-muv-pro-azul-tela-de-5-5-32gb-16mp/onofre-agora/745804/1ba149b5f3aee4f4bf0715772888924c.jpg"
+      />
+    </div>
+    <p
+      className="c3"
+    >
+      Moisés Dorel Windoo 1529
+       - 
+      bébé confort
+    </p>
+    <p
+      className="c4"
+    >
+      R$ 1.149,00
+    </p>
+  </div>
+  <div
+    className="c0 effect2 product css-1gwnwai"
+  >
+    <div
+      className="c1"
+      onClick={[Function]}
+    >
+      <div
+        className="heart checked"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 512 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M256 448l-30.164-27.211C118.718 322.442 48 258.61 48 179.095 48 114.221 97.918 64 162.4 64c36.399 0 70.717 16.742 93.6 43.947C278.882 80.742 313.199 64 349.6 64 414.082 64 464 114.221 464 179.095c0 79.516-70.719 143.348-177.836 241.694L256 448z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="c2 css-orj53y"
+    >
+      <img
+        src="https://a-static.mlcdn.com.br/618x463/smartphone-quantum-muv-pro-azul-tela-de-5-5-32gb-16mp/onofre-agora/745804/1ba149b5f3aee4f4bf0715772888924c.jpg"
+      />
+    </div>
+    <div
+      className="c5"
+    >
+      <div
+        className="c6"
+      >
+        <div>
+          ★
+        </div>
+        <div>
+          ★
+        </div>
+        <div>
+          ★
+        </div>
+        <div>
+          ★
+        </div>
+        <div>
+          ★
+        </div>
+      </div>
+      <div
+        className="c7"
+      >
+        <div
+          style={
+            Object {
+              "width": "20%",
+            }
+          }
+        >
+          ★
+        </div>
+        <div
+          style={
+            Object {
+              "width": "20%",
+            }
+          }
+        >
+          ★
+        </div>
+        <div
+          style={
+            Object {
+              "width": "20%",
+            }
+          }
+        >
+          ★
+        </div>
+        <div
+          style={
+            Object {
+              "width": "20%",
+            }
+          }
+        >
+          ★
+        </div>
+        <div
+          style={
+            Object {
+              "width": "4%",
+            }
+          }
+        >
+          ★
+        </div>
+      </div>
+    </div>
+    <p
+      className="c3"
+    >
+      Moisés Dorel Windoo 1529
+       - 
+      bébé confort
+    </p>
+    <p
+      className="c4"
+    >
+      R$ 1.149,00
+    </p>
+  </div>
+</div>
+`;

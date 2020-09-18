@@ -1,0 +1,19 @@
+{
+  "sqltools.connections": [
+    {
+      "database": "${workspaceFolder:wishlist-magalu}/api/databases/db_test.sqlite",
+      "driver": "SQLite",
+      "group": "wishlist",
+      "name": "test_db",
+      "previewLimit": 50
+    },
+    {
+      "database": "${workspaceFolder:wishlist-magalu}/api/databases/db.sqlite",
+      "driver": "SQLite",
+      "group": "wishlist",
+      "name": "devepment_db",
+      "previewLimit": 50
+    }
+  ],
+  "sqltools.useNodeRuntime": true
+}

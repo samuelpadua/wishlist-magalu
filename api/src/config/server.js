@@ -10,7 +10,10 @@ import numeralSetLocale from '../utils/numeral'
 async function init () {
   const server = Hapi.server({
     port: 9000,
-    host: 'localhost'
+    host: 'localhost',
+    routes: {
+      cors: true
+    }
   })
 
   await server.register(AuthJWT)

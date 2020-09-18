@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container component should render no logged customer 1`] = `
+.c0 {
+  position: relative;
+  margin: 0 auto !important;
+  max-width: 1220px;
+}
+
+<div
+  className="c0 css-5g036t"
+>
+  Content
+</div>
+`;

@@ -12,5 +12,14 @@ export default [
       tags: ['api', 'customer', 'auth'],
       validate: validator.auth
     }
+  },
+  {
+    method: 'GET',
+    path: '/api/auth/me',
+    handler: handlers.me,
+    config: {
+      description: 'Return logged user',
+      tags: ['api', 'customer', 'auth']
+    }
   }
 ]

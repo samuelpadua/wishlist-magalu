@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component should render no logged customer 1`] = `
+.c1 {
+  position: relative;
+  margin: 0 auto !important;
+  max-width: 1220px;
+}
+
+.c2 img {
+  width: 100px;
+}
+
+.c0 {
+  background: #1686FF;
+}
+
+.c3 a {
+  padding-top: 4px;
+  color: #ffffff !important;
+  cursor: pointer;
+}
+
+<nav
+  className="c0"
+>
+  <div
+    className="c1 css-5g036t"
+  >
+    <div
+      className="css-knfhfe"
+    >
+      <div
+        className="css-1ainljp"
+      >
+        <div
+          className="c2"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          <img
+            src="https://lojas.magazineluiza.com.br/_nuxt/img/7064da1.png"
+          />
+        </div>
+      </div>
+      <div
+        className="css-165jgs1"
+      >
+        <div
+          className="c3"
+        >
+          <a
+            href="/entrar"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Entrar
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+`;

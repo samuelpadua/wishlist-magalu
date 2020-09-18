@@ -1,6 +1,7 @@
 import HTTPStatus from 'http-status'
 
 import Customer from '../../customer/models/customer.model'
+import { generateToken } from '../services/auth.service'
 
 describe('auth', () => {
   beforeEach(async () => {
@@ -55,6 +56,31 @@ describe('auth', () => {
 
       expect(body.message).toBe('Missing authentication')
       expect(statusCode).toBe(HTTPStatus.UNAUTHORIZED)
+    })
+  })
+
+  describe('GET /api/auth/me', () => {
+    it('should return data of logged user', async () => {
+      await Customer.create({
+        name: 'Nome do cliente',
+        email: 'example-auth2@example.com'
+      })
+
+      const token = await generateToken('example-auth2@example.com')
+
+      const { payload, statusCode } = await server.inject({
+        method: 'GET',
+        url: '/api/auth/me',
+        headers: {
+          authorization: token
+        }
+      })
+
+      const body = JSON.parse(payload)
+
+      expect(body.name).toBe('Nome do cliente')
+      expect(body.email).toBe('example-auth2@example.com')
+      expect(statusCode).toBe(HTTPStatus.OK)
     })
   })
 })

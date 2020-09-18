@@ -19,18 +19,20 @@ export async function create (payload) {
   return customer
 }
 
-export async function find (id) {
-  return await Customer.findOne({
-    where: {
-      id
-    }
+export async function find (where) {
+  const customer = await Customer.findOne({
+    where
   })
+
+  return customer
 }
 
 export async function destroy (id) {
-  return await Customer.destroy({
+  const customer = await Customer.destroy({
     where: {
       id
     }
   })
+
+  return customer
 }

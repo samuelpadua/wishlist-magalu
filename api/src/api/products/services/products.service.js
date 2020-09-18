@@ -7,8 +7,11 @@ import Wishlist from '../../customer/models/wishlist.model'
 function serializeProducts (products, wishlist = []) {
   return products.map((product) => ({
     ...product,
-    price: numeral(product.price).format('$ 0,0.00'),
-    isFavorite: wishlist.some((favoriteProduct) => product.id === favoriteProduct.product_id)
+    formattedPrice: numeral(product.price).format('$ 0,0.00'),
+    isFavorite: wishlist.some((favoriteProduct) => product.id === favoriteProduct.product_id),
+    wishlist_id: wishlist.some((favoriteProduct) => product.id === favoriteProduct.product_id)
+      ? wishlist.find((favoriteProduct) => product.id === favoriteProduct.product_id).id
+      : null
   }))
 }
 
