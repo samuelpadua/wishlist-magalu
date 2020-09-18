@@ -6,8 +6,6 @@ import { useForm } from 'react-hook-form'
 import Router from 'next/router'
 import Link from 'next/link'
 
-import * as actionsProducts from '../state/products/actions'
-import * as actionsAuth from '../state/auth/actions'
 import { Container } from '../components/Layout'
 import useAuth from '../providers/useAuth'
 
@@ -25,7 +23,6 @@ function LoginPage() {
   }
 
   useEffect(() => {
-    console.log('isAuthenticated => ', isAuthenticated);
     if (isAuthenticated) {
       Router.push('/minha-conta')
     }
