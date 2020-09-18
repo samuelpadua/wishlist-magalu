@@ -5,7 +5,6 @@ import { Flex, Text, Button } from 'rebass'
 import Router from 'next/router'
 
 import * as actionsProducts from '../state/products/actions'
-import * as actionsAuth from '../state/auth/actions'
 import * as actionsWishlist from '../state/wishlist/actions'
 import ProductList from '../components/ProductList'
 import { Container } from '../components/Layout'
@@ -14,7 +13,6 @@ import useAuth from '../providers/useAuth'
 function ProductsPage({
   products,
   list,
-  me,
   addWishlist,
   updateFavorite,
   removeWishlist
@@ -99,7 +97,6 @@ const mapStateToProps = ({ products, auth }) => ({
 
 const mapActionsToProps = {
   ...actionsProducts,
-  ...actionsAuth,
   ...actionsWishlist
 }
 
